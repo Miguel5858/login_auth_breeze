@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Autenticacion con breeze</title>
+  </head>
+  <body style="font-size: 12px;">
+   
+    <div class="container mt-3 mb-4">
+        
+
+        
+    <div class="card">
+        <div class="card-header bg-dark text-white">
+            <h1>Autenticacion con breeze</h1>
+        </div>
+        <div class="card-body bg-light">
+            <hr>
+            <h3>CREAR LOGIN CON LARAVEL BREEZE Y BLADE</h3>
+            <hr>
+            <p>composer require laravel/breeze --dev</p>
+            <p>php artisan breeze:install</p> 
+            <p>php artisan migrate</p>
+            <p>npm install</p>
+            <p>npm run dev</p>
+          
+          <hr>
+          <h3>EN EL ARHIVO:  app/Models/User.php</h3>
+          <hr>
+           <p>use Illuminate\Contracts\Auth\<strong>MustVerifyEmail;</strong></p>
+          <p>use Illuminate\Contracts\Auth\<strong>CanResetPassword;</strong></p>
+          <p>class User extends Authenticatable implements <strong>MustVerifyEmail, CanResetPassword</strong></p>
+          
+          <hr>
+          <h3>EN EL ARHIVO:  .env  Configurar el smtp</h3>
+          <hr>
+          <p>MAIL_MAILER=smtp</p>
+          <p>MAIL_HOST=smtp.gmail.com</p>
+          <p>MAIL_PORT=587</p>
+          <p>MAIL_USERNAME=correo.com</p>
+          <p>MAIL_PASSWORD=fsfsfqqwdkjkjkdja</p>
+          <p>MAIL_ENCRYPTION=ssl</p>
+          <p>MAIL_FROM_ADDRESS="correo.com"</p>
+          <p>MAIL_FROM_NAME="${APP_NAME}"</p>
+          
+          
+          <hr>
+            <h3>PARA PONER EN ESPAÑOL LARAVEL</h3>
+          <hr>
+          <p>composer require --dev laravel-lang/common</p>
+          <p>php artisan lang:add es</p>
+          <p>php artisan lang:update</p>
+        </div>
+ 
+    </div>
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
